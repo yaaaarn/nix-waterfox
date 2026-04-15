@@ -38,13 +38,13 @@ stdenv.mkDerivation {
     if stdenv.hostPlatform.isLinux then
       fetchurl {
         url = "https://cdn.waterfox.com/waterfox/releases/${version}/${arch}/waterfox-${version}.tar.bz2";
-        hash = "sha256-2NfUaQLfJbw356e2muB0d1RwWcuLsl3WABVLhgzKdiE=";
+        hash = "sha256-qtcEltFWJlzNVRYxLYfqQrCk2YQF0diUGEunfAVCUWo=";
       }
     else
       fetchurl {
         url = "https://cdn.waterfox.com/waterfox/releases/${version}/${arch}/Waterfox%20${version}.dmg";
         name = "waterfox-${version}.dmg";
-        hash = "sha256-sWytBudI5SXArrj2qKdQRgiSeoCslTBzkFPYUhEmaWs=";
+        hash = "sha256-P2VHc0BOP+QEBb6zRiXNNVALJEOT47ro4iLCh3RNG+o=";
       };
 
   sourceRoot = lib.optional stdenv.hostPlatform.isDarwin ".";
