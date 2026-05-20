@@ -34,6 +34,7 @@ in
 stdenv.mkDerivation {
   inherit pname version;
   requireSigning = false;
+  allowAddonSideload = true;
 
   src =
     if stdenv.hostPlatform.isLinux then
