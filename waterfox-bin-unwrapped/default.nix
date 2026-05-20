@@ -33,6 +33,7 @@ let
 in
 stdenv.mkDerivation {
   inherit pname version;
+  requireSigning = false;
 
   src =
     if stdenv.hostPlatform.isLinux then
