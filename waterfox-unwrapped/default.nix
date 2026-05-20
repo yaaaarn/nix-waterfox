@@ -12,6 +12,7 @@ buildMozillaMach rec {
   applicationName = "Waterfox";
   binaryName = "waterfox";
   branding = "waterfox/browser/branding";
+  requireSigning = false;
   src = fetchFromGitHub {
     owner = "BrowserWorks";
     repo = "Waterfox";
